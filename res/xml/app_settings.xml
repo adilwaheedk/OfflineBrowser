@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="Browser Settings" >
+        <EditTextPreference
+            android:dialogTitle="Enter Homepage"
+            android:key="prefHomepage"
+            android:summary="Set Browser Homepage"
+            android:title="Homepage" />
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="prefVibrate"
+            android:summary="Vibrate When Page Loaded"
+            android:title="Enable Vibration" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="prefJavascript"
+            android:summary="Set Java Script Option"
+            android:title="Enable Java Script" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="prefDom"
+            android:summary="Set Document Object Model Storage"
+            android:title="Enable DOM" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Connectivity Settings" >
+        <Preference android:title="Wifi Manager" >
+            <intent android:action="android.net.wifi.PICK_WIFI_NETWORK" />
+        </Preference>
+    </PreferenceCategory>
+
+</PreferenceScreen>

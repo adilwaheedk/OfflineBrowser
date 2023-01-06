@@ -1,0 +1,49 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.ateeq.offlinebrowser.ActivityMain" >
+
+    <item
+        android:id="@+id/menu_progress"
+        android:actionLayout="@layout/action_progress"
+        android:orderInCategory="1"
+        android:showAsAction="always"
+        android:title=""
+        android:visible="false"/>
+    <item
+        android:id="@+id/action_save"
+        android:icon="@drawable/ic_action_save"
+        android:orderInCategory="5"
+        android:showAsAction="always"
+        android:title="@string/action_save"/>
+    <item
+        android:id="@+id/action_savelist"
+        android:icon="@drawable/ic_action_collection"
+        android:orderInCategory="6"
+        android:showAsAction="always"
+        android:title="@string/action_savelist"/>
+    <item
+        android:id="@+id/action_refresh"
+        android:icon="@drawable/ic_action_refresh"
+        android:orderInCategory="9"
+        android:showAsAction="ifRoom"
+        android:title="@string/action_refresh"/>
+    <item
+        android:id="@+id/action_home"
+        android:icon="@drawable/ic_menu_home"
+        android:orderInCategory="8"
+        android:showAsAction="ifRoom"
+        android:title="@string/action_home"/>
+    <item
+        android:id="@+id/action_cancel"
+        android:icon="@drawable/ic_action_cancel"
+        android:orderInCategory="10"
+        android:showAsAction="ifRoom"
+        android:title="@string/action_cancel"/>
+    <item
+        android:id="@+id/action_settings"
+        android:icon="@drawable/ic_action_settings"
+        android:orderInCategory="7"
+        android:showAsAction="ifRoom"
+        android:title="@string/action_settings"/>
+
+</menu>

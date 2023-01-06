@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="AlwaysShowAction">
+        <ignore path="res/menu/menu_main.xml" />
+    </issue>
+    <issue id="DefaultLocale" severity="ignore" />
+    <issue id="HardcodedText" severity="ignore" />
+    <issue id="RtlEnabled">
+        <ignore path="AndroidManifest.xml" />
+    </issue>
+    <issue id="SdCardPath">
+        <ignore path="src/com/ateeq/offlinebrowser/ActivityMain.java" />
+    </issue>
+    <issue id="SetJavaScriptEnabled">
+        <ignore path="src/com/ateeq/offlinebrowser/ActivityMain.java" />
+    </issue>
+    <issue id="UseSparseArrays">
+        <ignore path="src/com/khanstech/offlinebrowser/others/WebpageAdapter.java" />
+    </issue>
+</lint>

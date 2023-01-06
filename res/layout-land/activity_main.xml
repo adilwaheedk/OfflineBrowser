@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    tools:context="com.khanstech.offlinebrowser.activity.ActivityMain" >
+
+    <WebView
+        android:id="@+id/webViewMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/loadUrlBtn"
+        android:focusable="false" />
+
+    <EditText
+        android:id="@+id/urlText"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="5dp"
+        android:layout_toStartOf="@+id/loadUrlBtn"
+        android:ems="10"
+        android:hint=" "
+        android:inputType="textUri"
+        android:textSize="16sp" >
+    </EditText>
+
+    <ImageButton
+        android:id="@+id/loadUrlBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/urlText"
+        android:layout_alignParentEnd="true"
+        android:background="@android:color/transparent"
+        android:contentDescription="Load Url"
+        android:onClick="SendButton"
+        android:src="@android:drawable/ic_menu_send" />
+
+</RelativeLayout>

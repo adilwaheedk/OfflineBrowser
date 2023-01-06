@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/webpage_offline_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="2dp"
+    android:gravity="top"
+    android:longClickable="true"
+    android:orientation="horizontal"
+    android:padding="2dp" >
+
+    <TextView
+        android:id="@+id/webpage_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="4dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="10dp"
+        android:maxLines="2"
+        android:text="Title"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/webpage_url"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/webpage_title"
+        android:layout_below="@+id/webpage_title"
+        android:layout_marginEnd="4dp"
+        android:layout_marginTop="4dp"
+        android:maxLines="2"
+        android:text="URL"
+        android:textColor="@color/dark_gray"
+        android:textSize="14sp" />
+
+    <ImageButton
+        android:id="@+id/webpage_list_links"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="0dp"
+        android:background="@drawable/drawer"
+        android:contentDescription="Copy URL"
+        android:scaleType="center"
+        android:src="@drawable/ic_action_view_as_list" />
+
+    <ImageButton
+        android:id="@+id/webpage_online"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="45dp"
+        android:background="@drawable/drawer"
+        android:contentDescription="Load Online"
+        android:scaleType="center"
+        android:src="@drawable/ic_action_web_site" />
+
+    <ImageButton
+        android:id="@+id/webpage_offline"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="90dp"
+        android:background="@drawable/drawer"
+        android:contentDescription="Load Offline"
+        android:scaleType="center"
+        android:src="@drawable/ic_action_make_available_offline" />
+
+</RelativeLayout>

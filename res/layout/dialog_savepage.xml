@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_dialog_savepage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp" >
+
+    <TextView
+        android:id="@+id/labelTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textTitle"
+        android:layout_alignBottom="@+id/textTitle"
+        android:text="Title"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/labelURL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:maxLines="2"
+        android:text="URL"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/dark_gray"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/textTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/labelURL"
+        android:layout_toEndOf="@+id/labelTitle"
+        android:ems="10"
+        android:hint="Enter Title"
+        android:lines="1"
+        android:maxLength="25" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/checkBoxLinks"
+        android:layout_toEndOf="@+id/labelTitle"
+        android:text="Save" />
+
+    <CheckBox
+        android:id="@+id/checkBoxLinks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textTitle"
+        android:layout_centerHorizontal="true"
+        android:text="Save Child Links" />
+
+</RelativeLayout>
